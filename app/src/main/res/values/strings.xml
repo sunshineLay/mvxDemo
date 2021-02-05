@@ -5,4 +5,5 @@
     <string name="username_tv">姓名</string>
     <string name="user_password_tv">密码</string>
     <string name="login_btn">登录</string>
+    <string name="item_btn_con">按钮一</string>
 </resources>
