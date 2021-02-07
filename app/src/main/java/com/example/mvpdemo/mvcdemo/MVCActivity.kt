@@ -7,14 +7,10 @@ import com.example.mvpdemo.databinding.ActivityMvcBinding
 import com.safframework.log.L
 
 /**
- * @TODO:
+ * @TODO: MV 架构
  * @Date: 2021/2/3 14:26
  * @User: lay
  */
-// MVC - 这个实现
-// 优点：将M层独立出去，可以给很多C和V使用；（V和M隔离，V换了，M没有影响）
-// 缺点：所有的实现基本集中于C中；此处定义xml为V；
-// 此时，C（Activity/Fragment）中耦合了非常严重的V的部分；承担了太多V的实现。
 
 class MVCActivity : AppCompatActivity(),UserLoginModel.UserLogin {
     private lateinit var mvcBinding: ActivityMvcBinding

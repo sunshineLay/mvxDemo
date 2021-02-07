@@ -1,6 +1,5 @@
 package com.example.mvpdemo.maindemo
 
-import androidx.appcompat.app.AppCompatActivity
 
 /**
  * @TODO:

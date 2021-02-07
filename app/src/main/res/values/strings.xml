@@ -6,4 +6,6 @@
     <string name="user_password_tv">密码</string>
     <string name="login_btn">登录</string>
     <string name="item_btn_con">按钮一</string>
+    <string name="dwon_con">下载图片</string>
+    <string name="header_img">头像</string>
 </resources>

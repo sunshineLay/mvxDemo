@@ -1,5 +1,7 @@
 package com.example.mvpdemo.mvcdemo
 
+import com.safframework.log.L
+
 /**
  * @TODO:
  * @Date: 2021/2/3 15:51
@@ -10,6 +12,8 @@ class UserLoginModel {
                 username:String,
                 userPass:String
     ){
+        L.i("username:$username")
+        L.i("userpass:$userPass")
         callback.loading()
         val randomValue = (0..1).random()
         if(randomValue == 0){
