@@ -8,6 +8,7 @@ import com.bumptech.glide.module.AppGlideModule;
  * @Date: 2021/2/7 15:36
  * @User: lay
  */
+
 @GlideModule
 public class MvxDemoGlideModule extends AppGlideModule {
     @Override

@@ -28,13 +28,16 @@ class MVPActivity : AppCompatActivity(),MVPContract.ImgDownView {
         mvpBinding.run {
             downBtn.setOnClickListener {
                downImgPresenter.downImg(imgPath,showImg)
-//                Glide.with(this@MVPActivity).load(imgPath).into(showImg)
             }
         }
     }
 
     override fun loading() {
         ToastUtils.showShortMessage(this,"loading()")
+    }
+
+    override fun downFail(mes: String) {
+        ToastUtils.showShortMessage(this,mes)
     }
 
     override fun onDestroy() {
@@ -44,5 +47,6 @@ class MVPActivity : AppCompatActivity(),MVPContract.ImgDownView {
 
     companion object{
         private val imgPath = "http://img001.dailiantong.com/Progress/20200212/zty_20200212195435294.jpg"
+        private val imgPathHttps = "https://cdn.pixabay.com/photo/2017/05/28/10/34/madrid-2350687_960_720.jpg"
     }
 }
