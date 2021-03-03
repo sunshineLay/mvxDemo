@@ -21,6 +21,7 @@ import com.example.mvpdemo.utils.ToastUtils;
     // 而不是对于一类事物的抽象的这种需求。
     // 于是，接口就出现了。
     // 于是，在A处定义，在B处实现，在C处使用的接口回调就出现了。
+    // （需求推动技术，技术的本身就是需求的解决方式。）
 public class MVCActivity extends AppCompatActivity implements UserLoginModel.UserLogin {
 
     private  ActivityMvcBinding mvcBinding;
@@ -44,6 +45,7 @@ public class MVCActivity extends AppCompatActivity implements UserLoginModel.Use
               mvcContract.doLogin(MVCActivity.this,username,password);
           }
       });
+
     }
 
 
