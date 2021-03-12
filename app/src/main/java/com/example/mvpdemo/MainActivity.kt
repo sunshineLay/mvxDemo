@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mvpdemo.databinding.ActivityMainBinding
 import com.example.mvpdemo.maindemo.MainDataEntity
 import com.example.mvpdemo.maindemo.MainListAdapter
-import com.example.mvpdemo.mvc_java_demo.MVCActivity
 import com.example.mvpdemo.mvpdemo.MVPActivity
 import com.example.mvpdemo.utils.ActivityUtils
 import com.example.mvpdemo.mvcdemo.MVCActivity as MActivity
