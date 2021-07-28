@@ -5,7 +5,7 @@ buildscript {
     ext.kotlin_version = "1.4.21"
     ext.latest_version = "2.5.4"
     repositories {
-        maven{url 'http://localhost:8082/artifactory/android_group/'}
+        maven { url 'http://127.0.0.1:8081/artifactory/android_group/' }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.2"
@@ -18,7 +18,7 @@ buildscript {
 //as 的依赖源
 allprojects {
     repositories {
-        maven{url 'http://localhost:8082/artifactory/android_group/'}
+        maven { url 'http://127.0.0.1:8081/artifactory/android_group/' }
     }
 }
 
