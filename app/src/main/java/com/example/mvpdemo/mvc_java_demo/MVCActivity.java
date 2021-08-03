@@ -1,6 +1,9 @@
 package com.example.mvpdemo.mvc_java_demo;
 
+import android.app.ActivityManager;
+import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
@@ -26,6 +29,7 @@ public class MVCActivity extends AppCompatActivity implements UserLoginModel.Use
 
     private  ActivityMvcBinding mvcBinding;
     private MVCContract mvcContract = new MVCContract();
+    private static final String TAG = MVCActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,6 +37,14 @@ public class MVCActivity extends AppCompatActivity implements UserLoginModel.Use
         mvcBinding = ActivityMvcBinding.inflate(getLayoutInflater());
         setContentView(mvcBinding.getRoot());
         initUI();
+        initData();
+
+    }
+
+    private void initData() {
+        ActivityManager activityManager = (ActivityManager) this.getSystemService(Context.ACTIVITY_SERVICE);
+        int memory = activityManager.getMemoryClass();
+        Log.e(TAG, "initData: 当前内存的最大限制值是："+ memory);
     }
 
 
@@ -40,9 +52,10 @@ public class MVCActivity extends AppCompatActivity implements UserLoginModel.Use
         mvcBinding.loginBtn.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
-              String username = mvcBinding.userNameEdt.getText().toString();
-              String password = mvcBinding.passwordEdt.getText().toString();
-              mvcContract.doLogin(MVCActivity.this,username,password);
+              initData();
+//              String username = mvcBinding.userNameEdt.getText().toString();
+//              String password = mvcBinding.passwordEdt.getText().toString();
+//              mvcContract.doLogin(MVCActivity.this,username,password);
           }
       });
 

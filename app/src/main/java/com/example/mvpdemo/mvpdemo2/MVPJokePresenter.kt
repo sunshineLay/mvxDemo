@@ -12,8 +12,8 @@ class MVPJokePresenter:MVPContract.Presenter {
         MVPJokeModel()
     }
     override fun getJokeData() {
-        val jokeListData = mvpJokeModel.getJokeListData()
-        mvpJokeView?.showJokeList(jokeListData)
+//        val jokeListData = mvpJokeModel.getJokeListData()
+//        mvpJokeView?.showJokeList(jokeListData)
     }
     private fun attach(){
         mvpJokeView = MVPJokeActivity()

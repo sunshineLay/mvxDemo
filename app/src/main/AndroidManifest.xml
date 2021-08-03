@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MvpDemo">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".mvc_java_demo.MVCActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -25,7 +25,7 @@
 
         <activity android:name=".mvcdemo.MVCActivity"/>
 
-        <activity android:name=".mvc_java_demo.MVCActivity"/>
+<!--        <activity android:name=".mvc_java_demo.MVCActivity"/>-->
 
         <activity android:name=".mvpdemo.MVPActivity"/>
     </application>
