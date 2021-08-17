@@ -54,6 +54,9 @@ dependencies {
     // 吐司框架：https://github.com/getActivity/ToastUtils
     implementation 'com.github.getActivity:ToastUtils:9.5'
 
+    //堆内存分析的第三方库
+    implementation group: 'org.openjdk.jol',name: 'jol-core',version: '0.9'
+
 
 
 
